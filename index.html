@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Enfermería</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Plan de Estudios - Bachillerato en Enfermería</h1>
+  <div class="grid">
+    <!-- I Cuatrimestre -->
+    <button class="curso" data-id="E-101">E-101 Anatomía</button>
+    <button class="curso" data-id="E-128a">E-128a Métodos de Investigación</button>
+    <button class="curso" data-id="E-103">E-103 Estadística</button>
+    <button class="curso" data-id="E-104">E-104 Historia y Filosofía de Enfermería</button>
 
+    <!-- II Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-105" data-reqs="E-101">E-105 Bioquímica</button>
+    <button class="curso bloqueado" data-id="E-106" data-reqs="E-101">E-106 Fisiología</button>
+    <button class="curso bloqueado" data-id="E-107" data-reqs="E-104">E-107 Principios Cient. Enfermería</button>
+    <button class="curso bloqueado" data-id="E-114" data-reqs="E-101">E-114 Farmacología</button>
+
+    <!-- III Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-108" data-reqs="E-103">E-108 Epidemiología</button>
+    <button class="curso bloqueado" data-id="E-110" data-reqs="E-101,E-106">E-110 Nutrición</button>
+    <button class="curso bloqueado" data-id="E-111" data-reqs="E-101,E-105,E-106,E-107">E-111 Enfermería I</button>
+    <button class="curso bloqueado" data-id="E-112">E-112 Psicología General</button>
+    <button class="curso bloqueado" data-id="E-113">E-113 Metodología Educativa</button>
+
+    <!-- IV Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-109" data-reqs="E-105">E-109 Historia de la Cultura</button>
+    <button class="curso bloqueado" data-id="E-115" data-reqs="E-111">E-115 Enf. Salud Mental y Psiquiatría</button>
+    <button class="curso bloqueado" data-id="E-116" data-reqs="E-101,E-111">E-116 Biofísica</button>
+    <button class="curso bloqueado" data-id="E-117" data-reqs="E-112">E-117 Psic. Crec. y Desarrollo Humano</button>
+
+    <!-- V Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-118" data-reqs="E-107,E-111,E-115,E-117">E-118 Teorías Enf y Pers</button>
+    <button class="curso bloqueado" data-id="E-119" data-reqs="E-105">E-119 Microbiología y Parasitología</button>
+    <button class="curso bloqueado" data-id="E-120" data-reqs="E-111,E-117">E-120 Enfermería Materno Infantil</button>
+    <button class="curso bloqueado" data-id="E-121" data-reqs="E-117">E-121 Niñez y Adolescencia</button>
+
+    <!-- VI Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-122" data-reqs="E-107,E-111">E-122 Médico Quirúrgico I</button>
+    <button class="curso bloqueado" data-id="E-123" data-reqs="E-103,E-108,E-114,E-120">E-123 Enf. Salud Pública</button>
+    <button class="curso bloqueado" data-id="E-124">E-124 Ética I</button>
+
+    <!-- VII Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-125" data-reqs="E-122,E-123">E-125 Admin. para Enfermería</button>
+    <button class="curso bloqueado" data-id="E-126" data-reqs="E-122">E-126 Médico Quirúrgico II</button>
+    <button class="curso bloqueado" data-id="E-127" data-reqs="E-122">E-127 Enfermería Geriatría</button>
+
+    <!-- VIII Cuatrimestre -->
+    <button class="curso bloqueado" data-id="E-102">E-102 Antropología Cultural</button>
+    <button class="curso bloqueado" data-id="E-128B" data-reqs="E-125">E-128B Admin. Servicios Enf.</button>
+    <button class="curso bloqueado" data-id="E-128C" data-reqs="E-126">E-128C Urgencias en Enfermería</button>
+    <button class="curso bloqueado" data-id="E-128D" data-reqs="E-117,E-120,E-121">E-128D Enfermería Pediátrica</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
